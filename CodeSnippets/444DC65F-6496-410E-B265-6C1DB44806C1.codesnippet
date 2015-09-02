@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define SYSTEM_VERSION [UIDevice currentDevice].systemVersion.floatValue
+//圆角弧度
+
+#ifndef Toing_UIHeaders_h
+#define Toing_UIHeaders_h
+
+//statusBarHeight
+#define StatusBar_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+//NavBar高度
+#define NavigationBar_HEIGHT 44
+//TabBar高度
+#define TabBar_HEIGHT 49
+//获取屏幕 宽度、高度
+#define SCREEN_BOUNDS ([UIScreen mainScreen].bounds)
+#define SCREEN_BOUNDS_RESIZE     (CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-StatusBar_HEIGHT-NavigationBar_HEIGHT))
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
+#define SYSTEM_VERSION [UIDevice currentDevice].systemVersion.floatValue
+//圆角弧度
+
+#endif
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>444DC65F-6496-410E-B265-6C1DB44806C1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>adaptUIScreen</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

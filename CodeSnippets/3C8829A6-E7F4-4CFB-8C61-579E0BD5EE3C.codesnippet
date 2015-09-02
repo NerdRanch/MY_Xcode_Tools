@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>singleArc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static id _instance;
+
+/**
+ *  alloc方法内部会调用这个方法
+ */
++ (id)allocWithZone:(struct _NSZone *)zone
+{ 
+    if (_instance == nil) { // 防止频繁加锁
+        @synchronized(self) {
+            if (_instance == nil) { // 防止创建多次
+                _instance = [super allocWithZone:zone];
+            }
+        }
+    }
+    return _instance;
+}
+
++ (instancetype)sharedMusicTool
+{
+    if (_instance == nil) { // 防止频繁加锁
+        @synchronized(self) {
+            if (_instance == nil) { // 防止创建多次
+                _instance = [[self alloc] init];
+            }
+        }
+    }
+    return _instance;
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    return _instance;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3C8829A6-E7F4-4CFB-8C61-579E0BD5EE3C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>singleArc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

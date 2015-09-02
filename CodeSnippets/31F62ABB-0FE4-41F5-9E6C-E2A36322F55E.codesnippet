@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UITabBarItem *)tabBarItem {
+    if (_tabBarItem == nil) {
+        _tabBarItem = [[UITabBarItem alloc] initWithTitle:@"&lt;#title#&gt;" image:[UIImage :@"&lt;#imageName#&gt;"] tag:1];
+    }
+    return _tabBarItem;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>31F62ABB-0FE4-41F5-9E6C-E2A36322F55E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>myTabBarItem</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MytabBarItem</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

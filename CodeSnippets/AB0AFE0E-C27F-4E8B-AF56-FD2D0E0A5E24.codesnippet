@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initModel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (instancetype)initWithDict:(NSDictionary *)dict{
+    self = [super init];
+    if (self){
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
+
++ (instancetype)&lt;#class#&gt;WithDict:(NSDictionary *)dict{
+    return [[self alloc] initWithDict:dict];
+}
+
++ (NSArray *)&lt;#class#&gt;WithArray:(NSArray *)array{
+    NSMutableArray *arrayM = [NSMutableArray array];
+    for (NSDictionary *dict in array){
+        [arrayM addObject:[self carsWithDict:dict]];
+    }
+    return  arrayM;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AB0AFE0E-C27F-4E8B-AF56-FD2D0E0A5E24</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>initModel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
