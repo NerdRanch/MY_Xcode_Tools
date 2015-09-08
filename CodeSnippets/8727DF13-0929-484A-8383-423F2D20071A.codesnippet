@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>defineColor</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifndef neuqer_iOS_ColorDefine_h
+#define neuqer_iOS_ColorDefine_h
+
+#define COLOR_MANAGER(R,G,B,ALPHA)        [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:ALPHA]
+
+#define BLACK_COLOR         COLOR_MANAGER(0.0f,0.0f,0.0f,1.0f)
+#define NAV_COLOR           COLOR_MANAGER(0.0f, 160.0, 233.0, 1.0)
+#define GRAY_BACKGROUND     COLOR_MANAGER(234.0, 235.0, 237.0, 1.0)
+
+#endif
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8727DF13-0929-484A-8383-423F2D20071A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>defineColor</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
